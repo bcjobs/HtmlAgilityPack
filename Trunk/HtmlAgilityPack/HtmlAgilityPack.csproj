@@ -135,6 +135,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>del /f /q $(SolutionDir)..\Nuget\lib\Net20\*
-copy "$(TargetDir)Html*.*" $(SolutionDir)..\Nuget\lib\Net20\</PostBuildEvent>
+copy "$(TargetDir)Html*.*" $(SolutionDir)..\Nuget\lib\Net20\
+echo. 2&gt;$(SolutionDir)..\Nuget\lib\Net20\.gitkeep</PostBuildEvent>
   </PropertyGroup>
 </Project>
