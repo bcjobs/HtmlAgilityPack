@@ -194,3 +194,7 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# Nuget build directory
+Trunk/Nuget/lib/Net20/*.dll
+Trunk/Nuget/lib/Net20/*.xml
